@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, Dimensions } from 'react-native';
 
 
 export default function BraveButton() {
@@ -16,17 +16,17 @@ export default function BraveButton() {
 const styles = StyleSheet.create({
   container: {
     width: 160,
-    height: 154,
-    backgroundColor: "#CAE2FE",
+    height: (Dimensions.get('window').height)/6.5,
+    backgroundColor: '#CAE2FE',
     borderRadius: 45,
     justifyContent: 'center',
   },
   paragraph: {
     alignItems: 'center',
-    color: "#7C97CE",
+    color: '#7C97CE',
     fontSize: 24,
     textAlign: 'center',
-    fontFamily: 'Gabriela_400Regular',
+    fontFamily: 'Gabriela-Regular',
     lineHeight: 30.74,
   },
 });
