@@ -14,15 +14,15 @@ export default function Home({ navigation }) {
         <Pressable onPress={() => navigation.navigate("MissionPage")}>
           <MissionButton />
         </Pressable>
-        <Pressable onPress={() => navigation.navigate("Home")}>
+        <Pressable onPress={() => navigation.navigate("Program")}>
           <ProgramButton />
         </Pressable>
       </View>
       <View style={styles.buttonContainer2}>
-        <Pressable onPress={() => navigation.navigate("Home")}>
+        <Pressable onPress={() => navigation.navigate("BRAVE")}>
           <BraveButton />
         </Pressable>
-        <Pressable onPress={() => navigation.navigate("Home")}>
+        <Pressable onPress={() => navigation.navigate("Pledge")}>
           <PledgeButton />
         </Pressable>
       </View>
