@@ -2,26 +2,33 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import MissionPage from './components/MissionPage';
-import BravePage from './components/BravePage';
-import PledgePage from './components/PledgePage';
-import ProgramPage from './components/ProgramPage';
 import Home from './components/Home';
-import { StatusBar } from 'react-native';
+import BookList from './components/BookList';
+import HelpScreen from './components/HelpScreen';
+import Activities from './components/Activities';
+import Quiz from './components/Quiz';
+import Coloring from './components/Coloring';
+import ColoringPage from './components/ColoringPage';
+import Writing from './components/Writing';
+import PDF from './components/PDF';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <StatusBar />
       <Stack.Navigator
         initialRouteName="Home"
         screenOptions={{headerShown: false}}>
         <Stack.Screen name='Home' component={Home} />
-        <Stack.Screen name="MissionPage" component={MissionPage} />
-        <Stack.Screen name="Program" component={ProgramPage} />
-        <Stack.Screen name="BRAVE" component={BravePage} />
-        <Stack.Screen name='Pledge' component={PledgePage} />
+        <Stack.Screen name="PDF" component={PDF} />
+        <Stack.Screen name='HelpScreen' component={HelpScreen} />
+        <Stack.Screen name='BookList' component={BookList} />
+        <Stack.Screen name='Activities' component={Activities} />
+        <Stack.Screen name='Quiz' component={Quiz} />
+        <Stack.Screen name='Coloring' component={Coloring} />
+        <Stack.Screen name='ColoringPage' component={ColoringPage} />
+        <Stack.Screen name='Writing' component={Writing} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
