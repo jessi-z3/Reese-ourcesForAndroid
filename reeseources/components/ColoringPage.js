@@ -1,13 +1,12 @@
 import {
   StyleSheet,
   Dimensions,
+  Share,
   View,
   Text,
   Alert,
   Pressable,
 } from 'react-native';
-
-import Share from 'react-native-share';
 
 import Pdf from 'react-native-pdf';
 
@@ -34,7 +33,6 @@ export default function ColoringPage({route, navigation: {goBack}}) {
       Alert.alert(error.message);
     }
   };
-
   return (
     
     <>

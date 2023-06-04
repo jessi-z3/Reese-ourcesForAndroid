@@ -1,34 +1,39 @@
-import {StyleSheet, Dimensions, View, Alert, Pressable, Text} from 'react-native';
+import {
+  StyleSheet,
+  Dimensions,
+  View,
+  Alert,
+  Pressable,
+  Text,
+} from 'react-native';
 
 import Share from 'react-native-share';
 
 import Pdf from 'react-native-pdf';
 
-
-
 export default function PDF({route, navigation: {goBack}}) {
   const {selectedPDF, selectedPage} = route.params;
-  const source = selectedPage
-  console.log(source)
-    const onShare = () => {
-      try {
-          const shareOptions = {
-            url: 'file:///' + source,
-          };
-          console.log(shareOptions)
-          Share.open(shareOptions)
-            .then((result) => {
-              console.log(result);
-            })
-            .catch(error => {
-              console.log(error);
-              Alert.alert(error.message);
-            });
-        } catch (error) {
-        console.log(error);
-        Alert.alert(error.message);
-      }
-    };
+  const source = selectedPage;
+  console.log(source);
+  const onShare = () => {
+    try {
+      const shareOptions = {
+        url: 'file:///' + source,
+      };
+      console.log(shareOptions);
+      Share.open(shareOptions)
+        .then(result => {
+          console.log(result);
+        })
+        .catch(error => {
+          console.log(error);
+          Alert.alert(error.message);
+        });
+    } catch (error) {
+      console.log(error);
+      Alert.alert(error.message);
+    }
+  };
   const pdf = {
     uri: 'bundle-assets://' + selectedPDF,
   };
@@ -45,7 +50,7 @@ export default function PDF({route, navigation: {goBack}}) {
       </View>
     </>
   );
-};
+}
 export const styles = StyleSheet.create({
   pdf: {
     flex: 0.95,
