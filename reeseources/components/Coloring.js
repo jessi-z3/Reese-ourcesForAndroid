@@ -13,7 +13,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness1-1.pdf',
+                  selectedPage: 'Kindness1-1.pdf',
                   selectedPDF: 'Kindness1-1.pdf',
                 })
               }>
@@ -25,7 +25,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness1-2.pdf',
+                  selectedPage: 'Kindness1-2.pdf',
                   selectedPDF: 'Kindness1-2.pdf',
                 })
               }>
@@ -39,7 +39,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness1-3.pdf',
+                  selectedPage: 'Kindness1-3.pdf',
                   selectedPDF: 'Kindness1-3.pdf',
                 })
               }>
@@ -51,7 +51,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-1.pdf',
+                  selectedPage: 'Kindness2-1.pdf',
                   selectedPDF: 'Kindness2-1.pdf',
                 })
               }>
@@ -65,7 +65,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-2.pdf',
+                  selectedPage: 'Kindness2-2.pdf',
                   selectedPDF: 'Kindness2-2.pdf',
                 })
               }>
@@ -77,7 +77,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-3.pdf',
+                  selectedPage: 'Kindness2-3.pdf',
                   selectedPDF: 'Kindness2-3.pdf',
                 })
               }>
@@ -91,7 +91,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-4.pdf',
+                  selectedPage: 'Kindness2-4.pdf',
                   selectedPDF: 'Kindness2-4.pdf',
                 })
               }>
@@ -103,7 +103,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-5.pdf',
+                  selectedPage: 'Kindness2-5.pdf',
                   selectedPDF: 'Kindness2-5.pdf',
                 })
               }>
@@ -117,7 +117,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-6.pdf',
+                  selectedPage: 'Kindness2-6.pdf',
                   selectedPDF: 'Kindness2-6.pdf',
                 })
               }>
@@ -129,12 +129,12 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-7.pdf',
+                  selectedPage: 'Kindness2-7.pdf',
                   selectedPDF: 'Kindness2-7.pdf',
                 })
               }>
               <Image
-                source={require('../assets/Kindness2-7.jpg')}
+                source={require('../assets/PDFs/Kindness2-7.pdf')}
                 style={styles.thumbnail}
               />
             </Pressable>
@@ -143,7 +143,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-8.pdf',
+                  selectedPage: 'Kindness2-8.pdf',
                   selectedPDF: 'Kindness2-8.pdf',
                 })
               }>
@@ -155,7 +155,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-9.pdf',
+                  selectedPage: 'Kindness2-9.pdf',
                   selectedPDF: 'Kindness2-9.pdf',
                 })
               }>
@@ -169,7 +169,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
             <Pressable
               onPress={() =>
                 navigation.navigate('ColoringPage', {
-                  selectedPage: '../assets/PDFs/Kindness2-10.pdf',
+                  selectedPage: 'Kindness2-10.pdf',
                   selectedPDF: 'Kindness2-10.pdf',
                 })
               }>
