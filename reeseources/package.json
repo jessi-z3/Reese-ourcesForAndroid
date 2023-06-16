@@ -12,9 +12,11 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
+    "fs": "^0.0.1-security",
     "react": "18.2.0",
-    "react-native": "0.71.8",
+    "react-native": "^0.71.8",
     "react-native-blob-util": "^0.17.3",
+    "react-native-fs": "^2.20.0",
     "react-native-markdown-display": "^7.0.0-alpha.2",
     "react-native-pdf": "^6.6.2",
     "react-native-react-native-quiz-single-choice": "^1.0.3",

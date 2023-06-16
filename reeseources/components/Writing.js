@@ -90,8 +90,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 70,
     textAlign: 'center',
-    fontFamily: 'Dancing Script',
-    fontWeight: '700',
+    fontFamily: 'DancingScript-Bold',
     paddingBottom: 15,
   },
   container: {

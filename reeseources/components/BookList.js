@@ -10,7 +10,7 @@ import {
 export default function BookList({navigation: {goBack}}) {
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.container}>
+      <ScrollView style={styles.innerContainer}>
         <Text style={styles.headerText}>Book List</Text>
         <Text style={styles.subHeaderText}>Pre-School/Elementary</Text>
         <Text style={styles.authorText}>Blabey, Aaron</Text>
@@ -266,22 +266,21 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 70,
     textAlign: 'center',
-    fontFamily: 'Dancing Script',
-    fontWeight: '700',
+    fontFamily: 'DancingScript-Bold',
     paddingBottom: 15,
   },
   subHeaderText: {
     color: '#FFFFFF',
     fontSize: 30,
     textAlign: 'center',
-    fontFamily: 'Dancing Script',
+    fontFamily: 'DancingScript-Bold',
     paddingTop: 20,
   },
   authorText: {
     color: '#FFFFFF',
     fontSize: 24,
     textAlign: 'center',
-    fontFamily: 'Dancing Script',
+    fontFamily: 'DancingScript-Bold',
     paddingTop: 30,
   },
   bookTitleText: {
@@ -294,6 +293,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 15,
+    backgroundColor: '#96C5FC',
+    padding: 5,
+  },
+  innerContainer: {
+    flex: 0.95,
     backgroundColor: '#96C5FC',
     padding: 5,
   },

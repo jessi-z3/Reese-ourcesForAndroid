@@ -57,22 +57,12 @@ export default function HelpScreen({navigation: {goBack}}) {{
     return (
       <View style={styles.container}>
         <ScrollView style={[styles.scrollContainer, {marginBottom:15} ]}>
+          <Text style={styles.heading}>Find Help</Text>
           <Text style={styles.paragraph}>
             If you have done everything you can to resolve the situation and
             nothing has worked, or someone is in immediate danger, there are
             ways to get help.
           </Text>
-          {/* <Pressable
-            style={styles.reportButton}
-            onPress={() => navigation.navigate('Report')}>
-            <Text
-              style={[
-                styles.paragraph,
-                {textAlign: 'center', textTransform: 'uppercase'},
-              ]}>
-              Anonymously Report Bullying
-            </Text>
-          </Pressable> */}
           <Table borderStyle={{borderColor: '#7C97CE'}}>
             <Row
               data={state.tableHead}
@@ -157,4 +147,11 @@ export const styles = StyleSheet.create({
     marginVertical: 40,
     alignSelf: 'center',
   },
+  heading:{
+    fontFamily: 'DancingScript-Bold',
+    color: 'white',
+    fontSize: 70,
+    textAlign: 'center',
+    paddingBottom: 15,
+  }
 });

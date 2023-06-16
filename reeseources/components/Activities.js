@@ -1,6 +1,6 @@
 import React from "react";
 
-import {SafeAreaView, View, Text, Pressable, Dimensions, StyleSheet} from 'react-native';
+import {SafeAreaView, View, Text, Pressable, Dimensions, StyleSheet, Image} from 'react-native';
 
 
 
@@ -39,6 +39,10 @@ export default function Activities({navigation, navigation: {goBack}}){
               <Text style={styles.paragraph}>Writing Prompts</Text>
             </Pressable>
           </View>
+        <Image
+          source={require('../assets/brave-logo2x.png')}
+          style={{width: 350, height: 150, padding: 5}}
+        />
         </View>
         <View style={{padding: 5}}>
           <Pressable style={styles.backButton} onPress={() => goBack()}>
@@ -57,7 +61,7 @@ const styles = StyleSheet.create({
   innerContainer: {
     flex: 1,
     padding: 15,
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   backButton: {
@@ -77,8 +81,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 70,
     textAlign: 'center',
-    fontFamily: 'Dancing Script',
-    fontWeight: '700',
+    fontFamily: 'DancingScript-Bold',
     paddingBottom: 15,
   },
   container: {

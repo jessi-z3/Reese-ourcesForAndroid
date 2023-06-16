@@ -134,7 +134,7 @@ export default function Coloring({navigation, navigation: {goBack}}) {
                 })
               }>
               <Image
-                source={require('../assets/PDFs/Kindness2-7.pdf')}
+                source={require('../assets/Kindness2-7.jpg')}
                 style={styles.thumbnail}
               />
             </Pressable>
@@ -229,7 +229,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 45,
     textAlign: 'center',
-    fontFamily: 'Dancing Script',
+    fontFamily: 'DancingScript-Bold',
     paddingTop: 20,
     textDecorationLine: 'underline',
   },

@@ -148,8 +148,7 @@ export default function Quiz({navigation: {goBack}}) {
               return length;
             }
             const points = ObjectLength(correct) * 10;
-            console.log('Your Score: ' + points);
-            Alert.alert('Your Score: ' + points);
+            Alert.alert('Your Score: ' + points + '/100');
           }}
           data={data}
         />
