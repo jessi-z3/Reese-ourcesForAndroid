@@ -7,8 +7,11 @@ import {
   Pressable,
   Text,
 } from 'react-native';
+
 import Share from 'react-native-share';
+
 import RNFetchBlob from 'rn-fetch-blob';
+
 import Pdf from 'react-native-pdf';
 
 export default function PDF({route, navigation: {goBack}}) {
@@ -54,7 +57,6 @@ export default function PDF({route, navigation: {goBack}}) {
           })
           .catch(error => {
             console.log(error);
-            Alert.alert(error.message);
           });
       } catch (error) {
         console.log(error);
