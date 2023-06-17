@@ -208,7 +208,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   thumbnail: {
-    width: Dimensions.get('window').width / 2.25,
+    width: Dimensions.get('window').width / 2.15,
+    height: Dimensions.get('window').width / 1.75,
     margin: 5,
     flexDirection: 'row',
   },

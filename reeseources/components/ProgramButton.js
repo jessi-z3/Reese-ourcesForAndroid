@@ -1,11 +1,9 @@
-import { Text, View, StyleSheet, Dimensions } from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
 
 export default function ProgramButton() {
   return (
     <View style={styles.container}>
-      <Text style={styles.paragraph}>
-        Program
-      </Text>
+      <Text style={styles.paragraph}>Program</Text>
     </View>
   );
 }
@@ -13,7 +11,7 @@ export default function ProgramButton() {
 const styles = StyleSheet.create({
   container: {
     width: 160,
-    height: Dimensions.get('window').height / 6.5,
+    height: 135,
     backgroundColor: '#CAE2FE',
     borderRadius: 45,
     justifyContent: 'center',
